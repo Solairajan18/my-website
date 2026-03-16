@@ -6,7 +6,7 @@
 export const SITE_NAME = 'Cloud Engineer Portfolio'
 export const SITE_DESCRIPTION =
   'Senior Cloud Engineer portfolio showcasing AWS, Terraform, CI/CD, and DevOps expertise'
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+export const SITE_URL = typeof window !== 'undefined' ? window.location.origin : 'https://solairajan.online'
 
 // Social links
 export const SOCIAL_LINKS = {
