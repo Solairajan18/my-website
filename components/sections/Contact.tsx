@@ -6,7 +6,6 @@ import { Send, Mail, Loader, Linkedin } from 'lucide-react'
 import { useInView } from '@/hooks/useInView'
 import toast, { Toaster } from 'react-hot-toast'
 import { submitContactFormToAPI, getContactInfo, getMailtoLink, getLinkedInLink } from '@/lib/googleForms.service'
-import { PORTFOLIO_CONFIG } from '@/data/portfolio'
 
 interface FormData {
   name: string
