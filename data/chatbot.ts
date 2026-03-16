@@ -177,7 +177,7 @@ export const getKeywordResponsesMap = (): Record<string, string[]> => {
   map['resume'] = CHATBOT_RESPONSES.resume
 
   // Add hobbies
-  Object.entries(CHATBOT_RESPONSES.hobbies).forEach(([key, responses]) => {
+  Object.entries(CHATBOT_RESPONSES.hobbies).forEach(([, responses]) => {
     map[`clash_of_clans`] = responses.clash || responses.general
     map['hobbies'] = responses.general
   })
