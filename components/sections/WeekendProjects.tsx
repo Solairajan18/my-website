@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ExternalLink, Github, ArrowRight } from 'lucide-react'
+import { Github, ArrowRight } from 'lucide-react'
 import { useInView } from '@/hooks/useInView'
 import Image from 'next/image'
 
