@@ -170,56 +170,6 @@ export function About() {
             ))}
           </motion.div>
         </motion.div>
-                  >
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600 group-hover:bg-blue-700 transition-colors">
-                        <Icon className="h-6 w-6 text-white" />
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                        {highlight.title}
-                      </h3>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
-                        {highlight.description}
-                      </p>
-                    </div>
-                  </motion.div>
-                )
-              })}
-            </motion.div>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            variants={containerVariants}
-            className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200 dark:border-slate-700"
-          >
-            {[
-              { label: 'Years Experience', value: '5+' },
-              { label: 'Projects Delivered', value: '30+' },
-              { label: 'Team Members Mentored', value: '10+' },
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="text-center"
-              >
-                <motion.div
-                  className="text-4xl font-bold gradient-text"
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
-                  transition={{ delay: index * 0.2, duration: 0.6 }}
-                >
-                  {stat.value}
-                </motion.div>
-                <p className="text-gray-600 dark:text-gray-400 mt-2">
-                  {stat.label}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </motion.div>
       </div>
     </section>
   )
