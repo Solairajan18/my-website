@@ -5,10 +5,15 @@ import './globals.css'
 import { Navbar } from '@/components/Navbar'
 import { Chatbot } from '@/components/Chatbot'
 import { Footer } from '@/components/Footer'
+import { PORTFOLIO_CONFIG } from '@/data/portfolio'
+
+const siteTitle = `${PORTFOLIO_CONFIG.name} | ${PORTFOLIO_CONFIG.title}`
+const siteDescription =
+  'Cloud Engineer portfolio showcasing AWS, Terraform, CI/CD, Python, and DevOps expertise'
 
 export const metadata: Metadata = {
-  title: 'Cloud Engineer | Portfolio',
-  description: 'Senior Cloud Engineer portfolio showcasing AWS, Terraform, CI/CD, and DevOps expertise',
+  title: siteTitle,
+  description: siteDescription,
   keywords: [
     'Cloud Engineer',
     'AWS',
@@ -18,28 +23,27 @@ export const metadata: Metadata = {
     'Cloud Architecture',
     'Infrastructure as Code',
   ],
-  authors: [{ name: 'Cloud Engineer' }],
+  authors: [{ name: PORTFOLIO_CONFIG.name }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://yourportfolio.com',
-    siteName: 'Cloud Engineer Portfolio',
-    title: 'Cloud Engineer | Portfolio',
-    description: 'Senior Cloud Engineer portfolio showcasing AWS, Terraform, CI/CD, and DevOps expertise',
+    url: PORTFOLIO_CONFIG.website,
+    siteName: siteTitle,
+    title: siteTitle,
+    description: siteDescription,
     images: [
       {
-        url: 'https://yourportfolio.com/og-image.png',
+        url: `${PORTFOLIO_CONFIG.website}/profile.jpg`,
         width: 1200,
         height: 630,
-        alt: 'Cloud Engineer Portfolio',
+        alt: siteTitle,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cloud Engineer | Portfolio',
-    description: 'Senior Cloud Engineer portfolio showcasing AWS, Terraform, CI/CD, and DevOps expertise',
-    creator: '@yourtwitter',
+    title: siteTitle,
+    description: siteDescription,
   },
   robots: {
     index: true,
@@ -51,9 +55,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: 'your-google-verification-code',
   },
 }
 
@@ -76,7 +77,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://yourportfolio.com" />
+        <link rel="canonical" href={PORTFOLIO_CONFIG.website} />
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#3b82f6" />
       </head>

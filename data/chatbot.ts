@@ -190,7 +190,7 @@ export const DEFAULT_RESPONSES = [
   "I'm not sure how to respond to that. Try asking about my skills, projects, or experience!",
   'Can you clarify your question? You can ask about AWS, Terraform, or Python.',
   "That's interesting! You can ask me about my cloud expertise or GitLab experience.",
-  "I'm SolAI! I love chatting about tech, hobbies, or anything on your mind. 😊",
+  "I'm SolAI! I love chatting about tech, hobbies, or anything on your mind. :)",
   "SolAI here! If you want to talk about my portfolio, skills, or just have a casual chat, I'm all ears!",
   "Not sure I got that, but SolAI is always happy to chat! Ask me anything, professional or fun.",
   'SolAI can help with portfolio questions or just keep you company. What\'s up?',

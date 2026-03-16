@@ -1,3 +1,5 @@
+import { PORTFOLIO_CONFIG } from '@/data/portfolio'
+
 /**
  * Application constants
  */
@@ -10,10 +12,10 @@ export const SITE_URL = typeof window !== 'undefined' ? window.location.origin :
 
 // Social links
 export const SOCIAL_LINKS = {
-  github: 'https://github.com',
-  linkedin: 'https://linkedin.com',
-  twitter: 'https://twitter.com',
-  email: 'mailto:your-email@example.com',
+  github: PORTFOLIO_CONFIG.social.github,
+  linkedin: PORTFOLIO_CONFIG.social.linkedin,
+  twitter: PORTFOLIO_CONFIG.social.instagram,
+  email: `mailto:${PORTFOLIO_CONFIG.email}`,
   medium: 'https://medium.com/@cloud-engineer',
 }
 

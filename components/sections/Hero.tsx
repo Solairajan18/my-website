@@ -1,7 +1,6 @@
 'use client'
 
-// Deployment test - triggering webhook
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Download, Wrench, Github, Linkedin, Mail, Facebook, Instagram } from 'lucide-react'
 import Image from 'next/image'
@@ -148,7 +147,7 @@ export function Hero() {
             {PORTFOLIO_CONFIG.title}
           </p>
           <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300">
-            AWS • Terraform • Python • DevOps • Cloud Architecture
+            AWS | Terraform | Python | DevOps | Cloud Architecture
           </p>
         </motion.div>
 

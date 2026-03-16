@@ -29,7 +29,7 @@ export const PORTFOLIO_CONFIG = {
   },
   
   // Resume
-  resumeUrl: '/solai_rajan_resume.pdf',
+  resumeUrl: '/resume.pdf',
   
   // Color Scheme (from old portfolio)
   colors: {

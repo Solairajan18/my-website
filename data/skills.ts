@@ -180,7 +180,10 @@ export const SKILLS_DATA: SkillCategory[] = [
 /**
  * All skills as a flat list for easy search and filtering
  */
-export const FLAT_SKILLS: Skill[] = SKILLS_DATA.reduce((acc, category) => [...acc, ...category.skills], [])
+export const FLAT_SKILLS: Skill[] = SKILLS_DATA.reduce<Skill[]>(
+  (acc, category) => [...acc, ...category.skills],
+  []
+)
 
 /**
  * Get skills by category

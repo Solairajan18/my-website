@@ -33,7 +33,7 @@ export async function submitFeedbackToGoogleForms(
     formData.append(PORTFOLIO_CONFIG.googleForms.feedbackField, feedback)
 
     // Submit to Google Forms with no-cors mode (like the original)
-    const response = await fetch(PORTFOLIO_CONFIG.googleForms.feedbackUrl, {
+    await fetch(PORTFOLIO_CONFIG.googleForms.feedbackUrl, {
       method: 'POST',
       body: formData,
       mode: 'no-cors', // This is required for Google Forms cross-origin requests

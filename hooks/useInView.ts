@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState, type RefObject } from 'react'
 
 /**
  * Hook to detect if an element is in viewport
  * Useful for triggering animations on scroll
  */
-export function useInView(ref: React.RefObject<HTMLElement>, threshold = 0.1) {
+export function useInView(ref: RefObject<HTMLElement | null>, threshold = 0.1) {
   const [isInView, setIsInView] = useState(false)
 
   useEffect(() => {
