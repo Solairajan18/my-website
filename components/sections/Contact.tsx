@@ -144,7 +144,7 @@ export function Contact() {
               </span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 mt-8">
-              Have a project in mind or want to collaborate? Let's talk!
+              Have a project in mind or want to collaborate? Let&apos;s talk!
             </p>
           </motion.div>
 
@@ -302,7 +302,7 @@ export function Contact() {
 
             {/* Form Note */}
             <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
-              I'll get back to you as soon as possible. Looking forward to hearing from you!
+              I&apos;ll get back to you as soon as possible. Looking forward to hearing from you!
             </p>
           </motion.form>
         </motion.div>

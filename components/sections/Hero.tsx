@@ -157,7 +157,7 @@ export function Hero() {
           className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 rounded-2xl p-6 sm:p-8 border-l-4 border-green-600"
         >
           <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 italic">
-            "{PORTFOLIO_CONFIG.motto}"
+            &quot;{PORTFOLIO_CONFIG.motto}&quot;
           </p>
         </motion.div>
 
