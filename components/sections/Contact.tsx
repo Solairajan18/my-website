@@ -103,7 +103,7 @@ export function Contact() {
     setIsLoading(true)
 
     try {
-      const result = await submitContactFormToAPI(formData, true)
+      const result = await submitContactFormToAPI(formData)
 
       if (result.success) {
         toast.success(result.message)
