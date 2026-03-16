@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Metadata, Viewport } from 'next'
-import { ThemeProvider } from 'next-themes'
 import './globals.css'
+import { ThemeProvider } from '@/components/ThemeProvider'
 import { Navbar } from '@/components/Navbar'
 import { Chatbot } from '@/components/Chatbot'
 import { Footer } from '@/components/Footer'
